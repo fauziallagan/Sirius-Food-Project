@@ -12,9 +12,9 @@ public class Main {
         boolean isNext = true;
         while (isNext){
             clearScreen();
-            System.out.println("===================");
-            System.out.println("Sirius Food Project");
-            System.out.println("===================");
+            System.out.println("==============================");
+            System.out.println("Welcome to Sirius Food Project");
+            System.out.println("==============================");
             System.out.println("1. \tMakanan");
             System.out.println("2. \tMinuman");
             System.out.println("3. \tdessert");
@@ -23,10 +23,10 @@ public class Main {
             userOption = inputUser.next();
 
             switch (userOption) {
-                case "1" -> System.out.println("MAKANAN");
-                case "2" -> System.out.println("MINUMAN");
-                case "3" -> System.out.println("DESSERT");
-                default -> System.err.println("\n404 Not Found! Try Again!");
+                case "1" -> Food.fastFood();
+                case "2" -> Drink.drink();
+                case "3" -> Dessert.dessert();
+                default -> System.err.println("\nError! Try Again!");
             }
 
 
@@ -40,7 +40,7 @@ public class Main {
         System.out.print("\n" + message + "(y/n) ? ");
         String userOption = inputUser.next();
         while (!userOption.equalsIgnoreCase("y") && !userOption.equalsIgnoreCase("n")){
-            System.err.println("Wrong Choice !. Try Again");
+            System.err.println("Wrong Choice! Try Again!");
             System.out.print("\n" + message + "(y/n) ? ");
             userOption  = inputUser.next();
         }
