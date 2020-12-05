@@ -9,15 +9,16 @@ public class Main {
 	// write your code here
         Scanner inputUser = new Scanner(System.in);
         String userOption;
+
         boolean isNext = true;
         while (isNext){
             clearScreen();
-            System.out.println("==============================");
-            System.out.println("Welcome to Sirius Food Project");
-            System.out.println("==============================");
-            System.out.println("1. \tMakanan");
-            System.out.println("2. \tMinuman");
-            System.out.println("3. \tdessert");
+            System.out.println("\t==============================");
+            System.out.println("\tWelcome to Sirius Food Project");
+            System.out.println("\t==============================");
+            System.out.println("\t1. \tMakanan");
+            System.out.println("\t2. \tMinuman");
+            System.out.println("\t3. \tdessert");
 
             System.out.print("\n\nPilihan Anda : ");
             userOption = inputUser.next();
