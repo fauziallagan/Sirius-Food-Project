@@ -43,7 +43,7 @@ public class Food extends Kurs{
                 System.out.println("Wrong Choice!. Try Again!");
                 break;
         }
-        System.out.println("Jumlah Porsi ? : ");
+        System.out.print("Jumlah Porsi ? : ");
         porsi = input.nextInt();
         total =  (harga * porsi); // melakukan proses perhitungan dari nilai
         System.out.printf("Anda harus membayar : Rp. %d", total );//mencetak nilai dari objek total
